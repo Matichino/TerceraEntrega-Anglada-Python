@@ -4,14 +4,14 @@ from django.http import HttpResponse
 def inicio(request):
     return render (request, "AppJuridica/index.html")
 
-def cursos(request):
-    return HttpResponse("Vista cursos")
+def ServiciosJuridicos (request):
+    return render ( request, "AppJuridica/Servicios Juridicos.html")
 
-def profesores(request):
-    return HttpResponse("Vista profesores")
+def ServiciosCiberseguridad(request):
+    return render ( request,"AppJuridica/Vista Servicios Ciberseguridad.html")
 
-def estudiantes(request):
-    return HttpResponse("Vista estudiantes")
+def Precios(request):
+    return render ( request,"AppJuridica/Precios.html")
 
-def entregables(request):
-    return HttpResponse("Vista entregables")
+def SobreNosotros(request):
+    return render ( request,"AppJuridica/Sobre Nosotros.html")

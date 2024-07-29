@@ -1,0 +1,92 @@
+{% extends "AppJuridica/base.html" %}
+
+{% load static %}
+
+
+{% block main  %}
+
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title">
+                    <h2>Servicios de Ciberseguridad</h2>
+                    <p>Nuestros servicios de ciberseguridad están diseñados para proteger tu información y sistemas contra amenazas emergentes <br> Damos soluciones integrales que incluyen auditorías, análisis y protección contra ataques cibernéticos
+                    </p>
+                </div>
+                <div class="block">
+                    <div class="recent-work-mixMenu">
+                        <ul>
+                            <li><button class="filter" data-filter="all">All</button></li>
+                            <li><button class="filter" data-filter=".category-2">Tipos de proteccion</button></li>
+                            <li><button class="filter" data-filter=".category-1">Analisis de Datos</button></li>
+                            <li><button class="filter" data-filter=".category-2">Auditoria</button></li>
+                            <li><button class="filter" data-filter=".category-1">Firware y Hadware</button></li>
+                        </ul>
+                    </div>
+                    <div class="recent-work-pic">
+                        <ul id="mixed-items">
+                            <li class="mix category-1 col-md-4 col-xs-6" data-my-order="1">
+                                <a class="example-image-link" href="img/work1.jpg" data-lightbox="example-set">
+                                    <img class="img-responsive" src="img/work1.jpg" alt="">
+                                    <div class="overlay">
+                                        <h3>Web design</h3>
+                                        <i class="ion-ios-plus-empty"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mix category-2 col-md-4 col-xs-6" data-my-order="2">
+                                <a class="example-image-link" href="img/work2.jpg" data-lightbox="example-set">
+                                    <img class="img-responsive" src="img/work2.jpg" alt="">
+                                    <div class="overlay">
+                                        <h3>Web design</h3>
+                                        <i class="ion-ios-plus-empty"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mix category-1 col-md-4 col-xs-6" data-my-order="3">
+                                <a class="example-image-link" href="img/work3.jpg" data-lightbox="example-set">
+                                    <img class="img-responsive" src="img/work3.jpg" alt="">
+                                    <div class="overlay">
+                                        <h3>Web design</h3>
+                                        <i class="ion-ios-plus-empty"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mix category-2 col-md-4 col-xs-6" data-my-order="4">
+                                <a class="example-image-link" href="img/work4.jpg" data-lightbox="example-set">
+                                    <img class="img-responsive" src="img/work4.jpg" alt="">
+                                    <div class="overlay">
+                                        <h3>Web design</h3>
+                                        <i class="ion-ios-plus-empty"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mix category-1 col-md-4 col-xs-6" data-my-order="5">
+                                <a class="example-image-link" href="img/work5.jpg" data-lightbox="example-set">
+                                    <img class="img-responsive" src="img/work5.jpg" alt="">
+                                    <div class="overlay">
+                                        <h3>Web design</h3>
+                                        <i class="ion-ios-plus-empty"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mix category-2 col-md-4 col-xs-6" data-my-order="6">
+                                <a class="example-image-link" href="img/work6.jpg" data-lightbox="example-set">
+                                    <img class="img-responsive" src="img/work6.jpg" alt="">
+                                    <div class="overlay">
+                                        <h3>Web design</h3>
+                                        <i class="ion-ios-plus-empty"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock main  %}
