@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from AppJuridica.models import Cliente
 
 def inicio(request):
     return render (request, "AppJuridica/index.html")
@@ -15,3 +15,9 @@ def Precios(request):
 
 def SobreNosotros(request):
     return render ( request,"AppJuridica/Sobre Nosotros.html")
+
+
+def nuevo_cliente(request):
+
+    return render(request,"AppJuridica/nuevo_cliente.html")
+    

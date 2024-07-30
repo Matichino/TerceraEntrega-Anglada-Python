@@ -7,5 +7,6 @@ urlpatterns = [
     path('Servicios Ciberseguridad/', views.ServiciosCiberseguridad, name= "Servicios Ciberseguridad"),
     path('Precios/', views.Precios, name= "Precios"),
     path('Sobre Nosotros/', views.SobreNosotros, name= "Sobre Nosotros")
+    
 ]
 
