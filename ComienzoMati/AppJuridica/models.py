@@ -1,22 +1,23 @@
 from django.db import models
 
 # Create your models here.
-class Clientenuevo(models.Model):
-    nombre = models.CharField(max_length=40)
-    camada = models.IntegerField()
+class Cliente(models.Model):
+    usuario = models.IntegerField()
+    contraseña= models.CharField(max_length=8)
+    numero_de_caso= models.CharField(max_length=10)
 
 class Yasoycliente(models.Model):
     nombre = models.CharField(max_length=40)
     apellido = models.CharField(max_length=20)
     email = models.EmailField(max_length=40)
 
-class ProgramarCita(models.Model):
+class Datosdecontacto(models.Model):
     nombre = models.CharField(max_length=40)
     apellido = models.CharField(max_length=20)
     email = models.EmailField(max_length=40)
-    apellido = models.CharField(max_length=30)
+    telefono = models.CharField(max_length=30)
 
-class Contacto(models.Model):
+class ProgramarCita(models.Model):
     nombre = models.CharField(max_length=30)
-    fecha_de_entrega = models.DateField()
-    entregado = models.BooleanField()
+    fecha_de_cita = models.DateField()
+    confirmar= models.BooleanField()
